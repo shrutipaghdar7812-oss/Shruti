@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Parth Poly Plast</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#f5f5f5;
+}
+
+/* Header */
+header{
+background:#2e7d32;
+color:white;
+padding:15px;
+text-align:center;
+font-size:24px;
+}
+
+/* Section */
+.section{
+padding:20px;
+text-align:center;
+}
+
+/* Products */
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:white;
+width:260px;
+margin:15px;
+padding:15px;
+border-radius:10px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card img{
+width:100%;
+height:180px;
+border-radius:10px;
+}
+
+.price{
+color:green;
+font-weight:bold;
+}
+
+.btn{
+background:#2e7d32;
+color:white;
+padding:10px;
+margin-top:10px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+width:100%;
+}
+
+/* Steps */
+.steps{
+background:white;
+margin:20px;
+padding:20px;
+border-radius:10px;
+}
+
+/* Footer */
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+🌸 Parth Poly Plast
+</header>
+
+<div class="section">
+<h2>Our Products</h2>
+</div>
+
+<div class="container">
+
+<div class="card">
+<img src="https://via.placeholder.com/250">
+<h3>Unbreakable Butterfly</h3>
+<p>Strong, durable and long-lasting plastic product.</p>
+<p class="price">Price: ₹1</p>
+<button class="btn" onclick="order('Unbreakable Butterfly')">Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/250">
+<h3>Sprout Maker</h3>
+<p>Make healthy sprouts easily at home.</p>
+<p class="price">Price: ₹1</p>
+<button class="btn" onclick="order('Sprout Maker')">Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/250">
+<h3>Lunch Box</h3>
+<p>Safe, stylish and easy to carry lunch box.</p>
+<p class="price">Price: ₹1</p>
+<button class="btn" onclick="order('Lunch Box')">Order Now</button>
+</div>
+
+</div>
+
+<div class="steps">
+<h2>🛒 How to Purchase</h2>
+<p>1. Select your product</p>
+<p>2. Click on "Order Now"</p>
+<p>3. WhatsApp message will open</p>
+<p>4. Confirm your order</p>
+<p>5. Choose payment method (COD / UPI)</p>
+<p>6. Get your product delivered</p>
+</div>
+
+<div class="steps">
+<h2>💳 Payment Options</h2>
+<p>✔ Cash on Delivery (COD)</p>
+<p>✔ UPI Payment: <b>9537603735</b></p>
+</div>
+
+<footer>
+📞 Enquiry / Order: 9537603735 <br>
+© 2026 Parth Poly Plast
+</footer>
+
+<script>
+function order(product){
+let phone = "919537603735";
+let message = "Hello, I want to order " + product + " (Price ₹1). Please share details.";
+let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
